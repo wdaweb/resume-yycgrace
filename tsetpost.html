@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        p{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">55555</button>
+    <p class="res"></p>
+</body>
+
+<script>
+$('#btn').click(function(){
+    $.post("./testpost.php",{
+        name: "abcabc",
+        id: "456",
+        res: "xyz"
+    },function(data){
+        $('.res').html(data)
+    });
+});
+</script>
+
+</html>
+
+
+
+*chginput
+
